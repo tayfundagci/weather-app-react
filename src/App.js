@@ -81,6 +81,7 @@ function App() {
             <Button
               colorScheme="teal"
               size="lg"
+              _hover={{ bg: "rgb(192, 192, 192)" }}
               variant={"outline"}
               borderColor="gray.200"
               borderWidth={"3px"}
