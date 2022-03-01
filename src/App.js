@@ -1,11 +1,11 @@
 import { Input, Box, Button, Grid, Text } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import { useTheme } from "./context/ThemeContext";
 import "./App.css";
 
 function App() {
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState("Antalya");
   const [weatherData, setWeatherData] = useState([]);
   const { theme, setTheme } = useTheme();
 
@@ -20,6 +20,10 @@ function App() {
     "Friday",
     "Saturday",
   ];
+
+  useEffect(() => {
+    getData("antalya");
+  }, []);
 
   async function getData(value) {
     const data = await fetch(
