@@ -23,11 +23,11 @@ function App() {
 
   async function getData(value) {
     const data = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=5b2f91048bd54740ac361313220103&q=${value}&days=7&aqi=no&alerts=no&lang=en`
+      `https://api.weatherapi.com/v1/forecast.json?key=5b2f91048bd54740ac361313220103&q=${value}&days=7&aqi=no&alerts=no&lang=en
+      `
     );
     const result = await data.json();
     setWeatherData(result.forecast.forecastday);
-    console.log(result);
   }
 
   return (
