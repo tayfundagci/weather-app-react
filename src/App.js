@@ -35,19 +35,19 @@ function App() {
       <Box position="absolute" right={"10px"}>
         <Button
           variant={"none"}
-          onClick={() => setTheme("dark")}
+          onClick={() => setTheme("light")}
           fontSize={"30px"}
           marginRight="-75px"
-          visibility={() => theme === "dark" && "hidden"}
+          visibility={() => theme === "light" && "hidden"}
         >
           ☀️
         </Button>
         <Button
           variant={"none"}
-          onClick={() => setTheme("light")}
+          onClick={() => setTheme("dark")}
           fontSize={"30px"}
           marginRight=""
-          visibility={() => theme === "light" && "hidden"}
+          visibility={() => theme === "dark" && "hidden"}
         >
           🌑
         </Button>
