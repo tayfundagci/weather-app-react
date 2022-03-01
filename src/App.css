@@ -6,15 +6,17 @@
 }
 
 .body.light {
-  background-color: #fff;
-  color: #000;
+  background-image: url(https://images.unsplash.com/photo-1504253163759-c23fccaebb55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: 150%;
+  color: #555;
   font-variant: initial;
   min-height: -webkit-fill-avaible;
   font-size: medium;
 }
 
 .body.dark {
-  background-color: #556;
+  background-image: url(https://images.unsplash.com/photo-1507400492013-162706c8c05e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=659&q=80);
+  background-size: 50%;
   color: #fff;
   font-variant: initial;
   min-height: -webkit-fill-avaible;

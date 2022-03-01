@@ -3,7 +3,7 @@ import { createContext, useState, useEffect, useContext } from "react";
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark"); // locastorage de birşey yoksa default olarak light versin
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light"); // locastorage de birşey yoksa default olarak light versin
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
