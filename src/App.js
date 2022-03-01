@@ -53,7 +53,7 @@ function App() {
           marginRight=""
           visibility={() => theme === "dark" && "hidden"}
         >
-          🌑
+          🌙
         </Button>
       </Box>
 
