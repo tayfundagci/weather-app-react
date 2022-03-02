@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import { useTheme } from "./context/ThemeContext";
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   const [city, setCity] = useState("Antalya");
@@ -111,6 +112,8 @@ function App() {
           ))}
         </Box>
       </Box>
+
+      <Footer />
     </div>
   );
 }
