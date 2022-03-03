@@ -5,9 +5,7 @@ import { useTheme } from "./context/ThemeContext";
 import "./App.css";
 import Footer from "./components/Footer";
 
-const initialInputValue = { cityy: "" };
-
-function App({}) {
+function App() {
   const [city, setCity] = useState("Antalya");
   const [weatherData, setWeatherData] = useState([]);
   const { theme, setTheme } = useTheme();

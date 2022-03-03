@@ -13,7 +13,7 @@ function Footer() {
         <a
           href="https://www.linkedin.com/in/tayfundagci/"
           style={{ fontWeight: "bold" }}
-          target="_blank"
+          target="blank"
         >
           Tayfun Dagci
         </a>
