@@ -10,7 +10,7 @@ function Footer() {
           style={{ fontWeight: "bold" }}
           target="_blank"
         >
-          Tayfun Dagci
+          Tayfun Dağcı
         </a>
         <br />
       </p>
