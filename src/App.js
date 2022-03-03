@@ -5,7 +5,9 @@ import { useTheme } from "./context/ThemeContext";
 import "./App.css";
 import Footer from "./components/Footer";
 
-function App() {
+const initialInputValue = { cityy: "" };
+
+function App({}) {
   const [city, setCity] = useState("Antalya");
   const [weatherData, setWeatherData] = useState([]);
   const { theme, setTheme } = useTheme();
@@ -57,7 +59,6 @@ function App() {
           🌙
         </Button>
       </Box>
-
       <Box mt={"130px"}>
         <Text
           display="flex"
@@ -78,6 +79,7 @@ function App() {
               onChange={(event) => setCity(event.target.value)}
               value={city}
               style={{ borderColor: borderr }}
+              fontWeight="bold"
             />
             <Button
               colorScheme="teal"
@@ -95,12 +97,15 @@ function App() {
             </Button>
           </Box>
         </div>
-
         <Box display={"flex"} mt="5" justifyContent={"center"}>
           {weatherData.map((item) => (
-            <Grid templateColumns="repeat(1, 1fr)" gap={5} p="2">
+            <Grid
+              key={item.date}
+              templateColumns="repeat(1, 1fr)"
+              gap={5}
+              p="2"
+            >
               <Card
-                key={item.date}
                 // date={gunler[tarih.getDay(item.date)]}
                 date={days[new Date(item.date).getDay()]}
                 mintemp={item.day.mintemp_c}
@@ -112,7 +117,6 @@ function App() {
           ))}
         </Box>
       </Box>
-
       <Footer />
     </div>
   );
