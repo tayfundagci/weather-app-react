@@ -1,8 +1,13 @@
 import { BsGithub } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 import React from "react";
+import { useTheme } from "../context/ThemeContext";
 
 function Footer() {
+  const { theme } = useTheme();
+
+  const colorr = theme === "light" ? "rgb(50, 50, 50)" : "rgb(190,190,190)";
+
   return (
     <div>
       <p
@@ -14,7 +19,7 @@ function Footer() {
         Developed by{" "}
         <a
           href="https://www.linkedin.com/in/tayfundagci/"
-          style={{ fontWeight: "bold" }}
+          style={{ fontWeight: "bold", textDecoration: "none", color: colorr }}
           target="blank"
         >
           Tayfun Dagci
@@ -27,13 +32,21 @@ function Footer() {
           alignItems: "center",
           justifyContent: "center",
           marginTop: "5px",
+          color: colorr,
         }}
       >
         <a href="https://www.github.com/tayfundagci/" target="blank">
-          <BsGithub size={"33"} />
+          <BsGithub
+            size={"33"}
+            style={{ textDecoration: "none", color: colorr }}
+          />
         </a>
-        <a href="https://www.linkedin.com/in/tayfundagci/" target="blank">
-          <AiFillLinkedin size={"40"} h />
+        <a
+          className="ms-2"
+          href="https://www.linkedin.com/in/tayfundagci/"
+          target="blank"
+        >
+          <AiFillLinkedin size={"40"} style={{ color: colorr }} />
         </a>
       </div>
     </div>
