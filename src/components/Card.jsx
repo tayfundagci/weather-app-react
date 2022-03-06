@@ -27,6 +27,7 @@ const Card = ({ date, mintemp, maxtemp, condition, icon }) => {
         <img
           src={icon}
           style={{ height: "90px", width: "90px", marginTop: "-20px" }}
+          alt="weather"
         />
       </div>
       <span className="mt-3">{condition}</span>
