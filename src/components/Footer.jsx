@@ -31,7 +31,7 @@ function Footer() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: "5px",
+          marginTop: "-10px",
           color: colorr,
         }}
       >

@@ -32,7 +32,7 @@
 @media only screen and (max-width: 1000px) {
   .body.light {
     background-image: url(https://images.unsplash.com/photo-1504253163759-c23fccaebb55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    background-size: 300%;
+    background-size: 500%;
     color: #555;
     font-variant: initial;
     min-height: -webkit-fill-avaible;

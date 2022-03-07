@@ -180,6 +180,7 @@ function App() {
           ))}
         </Box>
       </Box> */}
+      <br />
       <Footer />
     </div>
   );
