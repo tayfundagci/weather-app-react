@@ -5,7 +5,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 
 function App() {
-  const [city, setCity] = useState("Antalya");
+  const [city, setCity] = useState("İstanbul");
   const [weatherData, setWeatherData] = useState([]);
   const { theme, setTheme } = useTheme();
 
@@ -23,7 +23,7 @@ function App() {
   ];
 
   useEffect(() => {
-    getData("antalya");
+    getData("İstanbul");
   }, []);
 
   async function getData(value) {
