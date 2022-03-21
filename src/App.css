@@ -10,7 +10,7 @@
   background-size: 150%;
   color: #555;
   font-variant: initial;
-  min-height: -webkit-fill-avaible;
+  min-height: 100vh;
   font-size: medium;
 }
 
@@ -19,7 +19,7 @@
   background-size: 50%;
   color: #fff;
   font-variant: initial;
-  min-height: -webkit-fill-avaible;
+  min-height: 100vh;
   font-size: medium;
 }
 
