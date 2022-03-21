@@ -26,6 +26,12 @@ function App() {
     getData("İstanbul");
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    getData(city);
+    setCity("");
+  };
+
   async function getData(value) {
     const data = await fetch(
       `https://api.weatherapi.com/v1/forecast.json?key=5b2f91048bd54740ac361313220103&q=${value}&days=7&aqi=no&alerts=no&lang=en
@@ -65,26 +71,24 @@ function App() {
         </p>
       </div>
 
-      <div className="justify-content-center d-flex ">
+      <form className="justify-content-center d-flex " onSubmit={handleSubmit}>
         <div style={{ display: "flex" }}>
           <input
             type="text"
-            className="form-control bg-transparent border-3 fw-bold   "
+            className="form-control bg-transparent border-3 fw-bold"
             placeholder="Search a city.."
             onChange={(event) => setCity(event.target.value)}
             value={city}
             style={{ borderColor: borderr, color: colorr }}
           />
-          <button
-            type="button"
+          <input
+            type="submit"
             className="bg-none border-3  ms-2 rounded-3 ps-3 pe-3 fw-bold"
-            onClick={() => getData(city)}
             style={{ borderColor: borderr }}
-          >
-            Search
-          </button>
+            value="Search"
+          />
         </div>
-      </div>
+      </form>
 
       <div className="d-flex justify-content-center mt-2 bg-transparent mt-3 fw-bold row">
         {weatherData.map((item, i) => (
